@@ -15,6 +15,7 @@ const Site = ({assets}) => (
       <div className='container'>
         <h1 className='title'>Serverlesslab.com</h1>
         <p className='subtitle'>workshops from serverless and AWS experts!</p>
+        <p>Come back soon...</p>
       </div>
     </section>
   </HTMLDocument>
