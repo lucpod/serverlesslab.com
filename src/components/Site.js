@@ -1,6 +1,9 @@
 import { h } from 'preact'
 import HTMLDocument from './HTMLDocument'
 import bulma from 'bulma/css/bulma.css'
+import Hero from './Hero'
+import ValueProposition from './ValueProposition'
+import WhyServerless from './WhyServerless'
 
 const Site = ({assets}) => (
   <HTMLDocument
@@ -11,13 +14,9 @@ const Site = ({assets}) => (
     stylesheets={[ bulma ]}
     scripts={[ `${assets.main}` ]}
   >
-    <section className='section'>
-      <div className='container'>
-        <h1 className='title'>Serverlesslab.com</h1>
-        <p className='subtitle'>workshops from serverless and AWS experts!</p>
-        <p>Come back soon...</p>
-      </div>
-    </section>
+    <Hero />
+    <ValueProposition />
+    <WhyServerless />
   </HTMLDocument>
 )
 
