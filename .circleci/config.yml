@@ -1,6 +1,12 @@
 version: 2
+
 jobs:
   build:
+
+    branches:
+      ignore:
+        - gh-pages
+
     docker:
       - image: circleci/node:8.4
 
@@ -34,6 +40,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               GITURL=`git config remote.origin.url`
+              cp -rf .circleci build
               cd build
               rm -rf .git/
               git config --global user.email "$GH_EMAIL"
@@ -50,12 +57,3 @@ jobs:
                  -H "Content-Type: application/json" \
                  --data '{"files":["https://$DOMAIN/index.html"]}'
             fi
-
-workflows:
-  version: 2
-  build_on_master:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
