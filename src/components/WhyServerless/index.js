@@ -1,7 +1,7 @@
 import { h } from 'preact'
 
 const Hero = () =>
-  (<section id='why-serverless' className='why-serverless'>
+  (<section id='why-serverless' className='section why-serverless'>
     <div className='container'>
       <div className='content'>
         <h2>Why is time to jump into serverless?</h2>

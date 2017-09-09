@@ -1,0 +1,10 @@
+.title::after {
+  content: '';
+  display: block;
+  content: '';
+  width: 5%;
+  height: 3px;
+  left: 0;
+  margin: 1em 0 0 0;
+  background: red;
+}

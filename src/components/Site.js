@@ -1,6 +1,7 @@
 import { h, render } from 'preact'
 import HTMLDocument from './HTMLDocument'
 import bulma from 'bulma/css/bulma.css'
+import style from '../style.css'
 import Menu from './Menu'
 import Hero from './Hero'
 import ValueProposition from './ValueProposition'
@@ -25,7 +26,7 @@ const Site = ({assets}) => (
     metatags={[
       { name: 'description', content: 'Serverless workshops from serverless and AWS experts' }
     ]}
-    stylesheets={[ bulma ]}
+    stylesheets={[ bulma, style ]}
     scripts={[ `${assets.main}` ]}
   >
     <div id='main'>

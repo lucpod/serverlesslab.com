@@ -1,14 +1,14 @@
 import { h } from 'preact'
 
 const Hero = () =>
-  (<section className='hero is-primary'>
+  (<section id='hero' className='section hero is-primary'>
     <div className='hero-body'>
       <div className='container'>
-        <h1 className='title'>
+        <h1>
           It’s time to move to SERVERLESS
         </h1>
         <h2 className='subtitle'>
-          Effective Serverless, AWS Lambda, Node.js training
+          Effective Serverless, AWS Lambda and Node.js training
         </h2>
       </div>
     </div>

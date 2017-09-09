@@ -3,7 +3,7 @@ import Instructor from './Instructor'
 import instructors from './data'
 
 const Instructors = () => (
-  <section id='instructors' className='instructors'>
+  <section id='instructors' className='section instructors'>
     <div className='container'>
       <div className='content'>
         <h2>Our Instructors</h2>
