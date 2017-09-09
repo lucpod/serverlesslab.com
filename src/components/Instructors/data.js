@@ -22,8 +22,8 @@ const data = [
     picture: lucianoPicture,
     description: `Passionate fullstack software developer. Node.js and JavaScript
       believer and co-author of "Node.js design patterns" (Packt).
-      recently launched Fullstack Bulletin (http://fstack.link), a
-      semi-automated weekly newsletter, also completely open source and built
+      recently launched Fullstack Bulletin, a
+      semi-automated weekly newsletter, completely open source and built
       on top of serverless services.`,
     links: {
       website: 'https://loiege.co/',
