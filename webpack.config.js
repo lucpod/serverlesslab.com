@@ -35,6 +35,7 @@ module.exports = {
 
   devServer: {
     contentBase: './build',
+    port: 9000,
     inline: false,
     clientLogLevel: 'none',
     overlay: {
