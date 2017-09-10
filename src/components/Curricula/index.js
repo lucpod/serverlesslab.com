@@ -1,10 +1,10 @@
 import { h } from 'preact'
 
 const Curricula = () => (
-  <section id='curricula' className='curricula'>
+  <section id='curricula' className='section curricula'>
     <div className='container'>
       <div className='content'>
-        <h2>Curricula</h2>
+        <h1 className='title'>Curricula</h1>
         <h3>All our training sessions are focused on learning through building
           &nbsp;real enterprise ready applications from scratch.</h3>
         <p>We currently offer two curricula, the Startup curriculum, suitable

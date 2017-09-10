@@ -1,11 +1,23 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables"
 
-/* RGB */
+/* palette */
 $color1: rgba(0, 56, 109, 1)
 $color2: rgba(66, 182, 186, 1)
 $color3: rgba(103, 234, 223, 1)
 $color4: rgba(216, 132, 255, 1)
 $color5: rgba(250, 1, 109, 1)
+
+/* palette-variants */
+$color1light: lighten($color1, 30)
+$color1invert: invert($color1)
+$color2light: lighten($color2, 30)
+$color2invert: invert($color2)
+$color3light: lighten($color3, 30)
+$color3invert: invert($color3)
+$color4light: lighten($color4, 30)
+$color4invert: invert($color4)
+$color5light: lighten($color5, 30)
+$color5invert: invert($color5)
 
 // Use system default fonts
 $family-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
@@ -17,16 +29,27 @@ $family-primary: $family-serif
 
 @import "../node_modules/bulma/bulma"
 
-#menu .navbar-item
-  color: $color1
+img.section-icon
+  width: 100%
+  max-width: 10em
+
+.content h1.title
+  color: $primary
   font-weight: bold
 
-#hero
-  background-size: cover
-  position: relative
+.title::after
+  content: ''
+  display: block
+  width: 2em
+  height: 4px
+  left: 0
+  margin: 1em 0 0 0
+  background: $primary
 
-#hero strong
-  color: $color2
+#menu
+  .navbar-item
+    color: $color1
+    font-weight: bold
 
 #hero::before
   background-image: linear-gradient(to bottom right, rgba(0, 56, 109, .7) 35%, #2175bc 95%)
@@ -43,26 +66,23 @@ $family-primary: $family-serif
   height: 100%
   -webkit-font-smoothing: antialiased
 
-#hero .hero-body
-  z-index: 10
+#hero
+  background-size: cover
   position: relative
 
-#hero .logo
-  maxWidth: 600px
-  width: 100%
+  strong
+    color: $color2
 
-#hero .main-text
-  color: #fff
+  .hero-body
+    z-index: 10
+    position: relative
 
-.content h1.title
-  color: $primary
-  font-weight: bold
+  .logo
+    maxWidth: 600px
+    width: 100%
 
-.title::after
-  content: ''
-  display: block
-  width: 2em
-  height: 4px
-  left: 0
-  margin: 1em 0 0 0
-  background: $primary
+  .main-text
+    color: #fff
+
+#why-serverless
+  background-color: $color3light
