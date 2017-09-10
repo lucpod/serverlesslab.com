@@ -1,0 +1,68 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables"
+
+/* RGB */
+$color1: rgba(0, 56, 109, 1)
+$color2: rgba(66, 182, 186, 1)
+$color3: rgba(103, 234, 223, 1)
+$color4: rgba(216, 132, 255, 1)
+$color5: rgba(250, 1, 109, 1)
+
+// Use system default fonts
+$family-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+
+// 3. Set the derived variables
+$primary: $color1
+$primary-invert: $color5
+$family-primary: $family-serif
+
+@import "../node_modules/bulma/bulma"
+
+#menu .navbar-item
+  color: $color1
+  font-weight: bold
+
+#hero
+  background-size: cover
+  position: relative
+
+#hero strong
+  color: $color2
+
+#hero::before
+  background-image: linear-gradient(to bottom right, rgba(0, 56, 109, .7) 35%, #2175bc 95%)
+  z-index: 1
+  content: ''
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-size: cover
+  box-sizing: inherit
+  width: 100%
+  height: 100%
+  -webkit-font-smoothing: antialiased
+
+#hero .hero-body
+  z-index: 10
+  position: relative
+
+#hero .logo
+  maxWidth: 600px
+  width: 100%
+
+#hero .main-text
+  color: #fff
+
+.content h1.title
+  color: $primary
+  font-weight: bold
+
+.title::after
+  content: ''
+  display: block
+  width: 2em
+  height: 4px
+  left: 0
+  margin: 1em 0 0 0
+  background: $primary

@@ -2,6 +2,7 @@ const { resolve, join } = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const buildPath = resolve(join(__dirname, 'build'))
 
@@ -29,6 +30,13 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader?sourceMap', 'sass-loader']
+        })
       }
     ]
   },
@@ -45,7 +53,7 @@ module.exports = {
     compress: true
   },
 
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
 
   plugins: [
     new CleanWebpackPlugin(buildPath),
@@ -57,6 +65,9 @@ module.exports = {
         document: {}
       }
     }),
-    new CompressionPlugin()
+    new CompressionPlugin(),
+    new ExtractTextPlugin({
+      filename: 'style.css'
+    })
   ]
 }

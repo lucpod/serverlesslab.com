@@ -1,13 +1,15 @@
 import { h, render } from 'preact'
 import HTMLDocument from './HTMLDocument'
-import bulma from 'bulma/css/bulma.css'
-import style from '../style.css'
+import style from '../style.sass'
 import Menu from './Menu'
 import Hero from './Hero'
 import ValueProposition from './ValueProposition'
 import WhyServerless from './WhyServerless'
 import Curricula from './Curricula'
 import Instructors from './Instructors'
+import Footer from './Footer'
+
+console.log({style})
 
 const Content = () => (
   <div>
@@ -17,6 +19,7 @@ const Content = () => (
     <WhyServerless />
     <Curricula />
     <Instructors />
+    <Footer />
   </div>
 )
 
@@ -26,7 +29,7 @@ const Site = ({assets}) => (
     metatags={[
       { name: 'description', content: 'Serverless workshops from serverless and AWS experts' }
     ]}
-    stylesheets={[ bulma, style ]}
+    stylesheets={[ 'style.css' ]}
     scripts={[ `${assets.main}` ]}
   >
     <div id='main'>
