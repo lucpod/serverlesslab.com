@@ -16,7 +16,7 @@ const Hero = () =>
       </div>
 
       <div className='columns'>
-        <div className='column'>
+        <div className='column is-hidden-mobile'>
           <p className='has-text-centered'>
             <img className='section-icon' src={galaxyIcon} />
           </p>

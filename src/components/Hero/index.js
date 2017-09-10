@@ -12,7 +12,7 @@ const Hero = () =>
             width: '100%'
           }} />
         </p>
-        <p className='main-text has-text-centered is-size-1'>
+        <p className='main-text has-text-centered is-size-2'>
           Effective <strong>Serverless</strong>, <strong>AWS Lambda</strong> and <strong>Node.js</strong> training
         </p>
       </div>

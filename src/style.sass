@@ -24,7 +24,7 @@ $family-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 
 // 3. Set the derived variables
 $primary: $color1
-$primary-invert: $color5
+$primary-invert: $color1invert
 $family-primary: $family-serif
 
 @import "../node_modules/bulma/bulma"
@@ -32,6 +32,7 @@ $family-primary: $family-serif
 img.section-icon
   width: 100%
   max-width: 10em
+  max-height: 10em
 
 .content h1.title
   color: $primary
@@ -71,7 +72,7 @@ img.section-icon
   position: relative
 
   strong
-    color: $color2
+    color: rgb(255, 221, 87)
 
   .hero-body
     z-index: 10

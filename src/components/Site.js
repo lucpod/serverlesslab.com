@@ -27,6 +27,8 @@ const Site = ({assets}) => (
   <HTMLDocument
     title='Serverless Lab - Serverless workshops from serverless and AWS experts'
     metatags={[
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: 'Serverless workshops from serverless and AWS experts' }
     ]}
     stylesheets={[ 'style.css' ]}
