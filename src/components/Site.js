@@ -1,6 +1,6 @@
 import { h, render } from 'preact'
 import HTMLDocument from './HTMLDocument'
-import style from '../style.sass'
+import '../style.sass'
 import Menu from './Menu'
 import Hero from './Hero'
 import ValueProposition from './ValueProposition'
@@ -8,8 +8,6 @@ import WhyServerless from './WhyServerless'
 import Curricula from './Curricula'
 import Instructors from './Instructors'
 import Footer from './Footer'
-
-console.log({style})
 
 const Content = () => (
   <div>
