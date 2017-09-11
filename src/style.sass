@@ -19,6 +19,9 @@ $color4invert: invert($color4)
 $color5light: lighten($color5, 30)
 $color5invert: invert($color5)
 
+$neutral: #fff
+$inverted: $color3light
+
 // Use system default fonts
 $family-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
@@ -28,6 +31,21 @@ $primary-invert: $color1invert
 $family-primary: $family-serif
 
 @import "../node_modules/bulma/bulma"
+
+section.section.bg-neutral
+  background-color: $neutral
+
+section.section.bg-inverted
+  background-color: $inverted
+
+svg.separator
+  display: block
+
+  path.inverted
+    fill: $inverted
+
+  path.neutral
+    fill: $neutral
 
 img.section-icon
   width: 100%
@@ -84,6 +102,3 @@ img.section-icon
 
   .main-text
     color: #fff
-
-#why-serverless
-  background-color: $color3light
