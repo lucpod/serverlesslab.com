@@ -1,5 +1,6 @@
 import { h } from 'preact'
 import planetaryIcon from '../icons/planetarysystem.svg'
+import TalkWithUsButton from '../utils/TalkWithUsButton'
 
 const ValueProposition = () =>
   (<div>
@@ -19,7 +20,7 @@ const ValueProposition = () =>
               Our practical curriculum includes the main serverless technologies like <strong>Lambda Functions</strong>, <strong>API gateway</strong>, <strong>Dynamo DB</strong>, <strong>S3</strong>, <strong>RDS</strong>, <strong>Cloudwatch</strong> and covers a variety of topics from the basic to advanced topics like <strong>networking</strong>, <strong>performance</strong>, <strong>security</strong>, <strong>troubleshooting</strong> and <strong>continuous delivery</strong>.
               </p>
               <p>
-                <a href='#' className='button is-info is-large'>Talk with us today</a>
+                <TalkWithUsButton />
               </p>
             </div>
           </div>

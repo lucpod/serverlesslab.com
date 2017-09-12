@@ -9,6 +9,7 @@ import Curricula from './Curricula'
 import Instructors from './Instructors'
 import WhyTraining from './WhyTraining'
 import Footer from './Footer'
+import drift from './utils/drift'
 
 const Content = () => (
   <div>
@@ -45,6 +46,10 @@ if (window && document) {
   window.onload = function () {
     const root = document.getElementById('main')
     render(<Content isClient />, root, root.firstChild)
+
+    if (window.location.href.indexOf('localhost') === -1) {
+      drift()
+    }
   }
 }
 

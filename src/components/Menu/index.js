@@ -36,11 +36,12 @@ class Menu extends Component {
 
             <div id='navMenu-main' className={`navbar-menu ${this.state.burgerActive ? 'is-active' : ''}`}>
               <div className='navbar-start'>
-                <a className='navbar-item ' href='#value-proposition'>Our offer</a>
-                <a className='navbar-item ' href='#why-serverless'>Why Serverless?</a>
-                <a className='navbar-item ' href='#curricula'>Curricula</a>
-                <a className='navbar-item ' href='#instructors'>Instructors</a>
-                <a className='navbar-item ' href='#talk-with-us'>Talk with us</a>
+                <a className='navbar-item' href='#value-proposition'>Our offer</a>
+                <a className='navbar-item' href='#why-serverless'>Why Serverless?</a>
+                <a className='navbar-item' href='#curricula'>Curricula</a>
+                <a className='navbar-item' href='#instructors'>Instructors</a>
+                <a className='navbar-item' href='#talk-with-us'>Talk with us</a>
+                <a className='navbar-item' href='#why-training'>ROI</a>
               </div>
             </div>
           </nav>
