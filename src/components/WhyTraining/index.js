@@ -21,12 +21,10 @@ class WhyTraining extends Component {
   }
 
   _changeEngineers (e) {
-    e.preventDefault()
     this.setState({ engineers: e.target.value })
   }
 
   _changeEfficiency (e) {
-    e.preventDefault()
     this.setState({ efficiency: e.target.value })
   }
 
@@ -61,12 +59,12 @@ class WhyTraining extends Component {
                         <div className='field'>
                           <label className='label'>Days of training</label>
                           <div className='control'>
-                            <radiogroup name='days' onChange={this._changeDays}>
+                            <radiogroup name='days'>
                               <label className='radio is-medium'>
-                                <input className='radio is-medium' type='radio' name='days' value='1' checked={parseFloat(this.state.days) === 1} /> 1 day
+                                <input onChange={this._changeDays} className='radio is-medium' type='radio' name='days' value='1' checked={parseFloat(this.state.days) === 1} /> 1 day
                               </label>
                               <label className='radio is-medium'>
-                                <input className='radio is-medium' type='radio' name='days' value='2' checked={parseFloat(this.state.days) === 2} /> 2 days
+                                <input onChange={this._changeDays} className='radio is-medium' type='radio' name='days' value='2' checked={parseFloat(this.state.days) === 2} /> 2 days
                               </label>
                             </radiogroup>
                           </div>
