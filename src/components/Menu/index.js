@@ -1,5 +1,5 @@
 import { h, Component } from 'preact'
-import logo from './images/logo-color.svg'
+import logo from '../images/logo-color.svg'
 
 class Menu extends Component {
   constructor (props) {

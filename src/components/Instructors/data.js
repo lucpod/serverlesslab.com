@@ -22,7 +22,7 @@ const data = [
     picture: lucianoPicture,
     description: `Luciano is a passionate fullstack software developer, Node.js and JavaScript
       believer and co-author of "Node.js design patterns" (Packt).
-      He Recently launched Fullstack Bulletin, a
+      He R  ecently launched Fullstack Bulletin, a
       semi-automated weekly newsletter, completely open source and built
       on top of serverless services.`,
     links: {
