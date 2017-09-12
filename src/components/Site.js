@@ -1,3 +1,4 @@
+import { version } from '../../package.json'
 import { h, render } from 'preact'
 import HTMLDocument from './HTMLDocument'
 import '../style.sass'
@@ -32,7 +33,7 @@ const Site = ({assets}) => (
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: 'Serverless workshops from serverless and AWS experts' }
     ]}
-    stylesheets={[ 'style.css' ]}
+    stylesheets={[ `style-${version}.css` ]}
     scripts={[ `${assets.main}` ]}
   >
     <div id='main'>

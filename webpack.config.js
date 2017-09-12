@@ -1,3 +1,4 @@
+const { version } = require('./package.json')
 const { resolve, join } = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
@@ -11,13 +12,17 @@ module.exports = {
   entry: './src/build.js',
 
   output: {
-    filename: 'build.js',
+    filename: `build-${version}.js`,
     path: buildPath,
     libraryTarget: 'umd'
   },
 
   module: {
     rules: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -67,7 +72,7 @@ module.exports = {
     }),
     new CompressionPlugin(),
     new ExtractTextPlugin({
-      filename: 'style.css'
+      filename: `style-${version}.css`
     })
   ]
 }
