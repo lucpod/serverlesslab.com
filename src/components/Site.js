@@ -7,6 +7,7 @@ import ValueProposition from './ValueProposition'
 import WhyServerless from './WhyServerless'
 import Curricula from './Curricula'
 import Instructors from './Instructors'
+import WhyTraining from './WhyTraining'
 import Footer from './Footer'
 
 const Content = () => (
@@ -17,6 +18,7 @@ const Content = () => (
     <WhyServerless />
     <Curricula />
     <Instructors />
+    <WhyTraining />
     <Footer />
   </div>
 )

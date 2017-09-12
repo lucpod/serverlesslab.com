@@ -6,7 +6,7 @@ const data = [
     name: 'Padraig O\'Brien',
     picture: podgePicture,
     description: `Padraig has been working in IT for nearly 20 years, covering all
-      areas from engineering, product development, testing , operations and senior
+      areas from engineering, product development, testing, operations and senior
       management.
       He is the organiser of Serverless Dublin, Lean Coffee Dublin and Nodeschool dublin.
       He is currently working on unicorndb.io`,
@@ -22,7 +22,7 @@ const data = [
     picture: lucianoPicture,
     description: `Luciano is a passionate fullstack software developer, Node.js and JavaScript
       believer and co-author of "Node.js design patterns" (Packt).
-      He R  ecently launched Fullstack Bulletin, a
+      He Recently launched Fullstack Bulletin, a
       semi-automated weekly newsletter, completely open source and built
       on top of serverless services.`,
     links: {

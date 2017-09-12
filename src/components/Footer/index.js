@@ -13,16 +13,20 @@ const Footer = () => (
             </p>
             <p className='is-size-7'>
             Cover photo by Igor Ovsyannykov on <a href='https://unsplash.com/photos/vdWewqfr_V0' target='_blank'>Unsplash</a><br />
-            Icons set (Science-icons) by <a href='https://www.swifticons.com/' target='_blank'>SwiftIcons</a>
+            Icons set (Science-icons) by <a href='https://www.swifticons.com/' target='_blank'>SwiftIcons</a><br />
+            Adopting <a href='https://bulma.io' target='_blank'>Bulma</a> CSS framework
             </p>
           </div>
         </div>
         <div className='column is-one-quarter'>
           <div className='content'>
-            <p className='is-size-7'>
+            <p className='is-size-7 has-text-centered'>
               <a href='/' className='image'>
                 <img style={{maxWidth: '300px'}} src={logo} alt='Serverless lab - Effective Serverless, AWS Lambda, and Node.js training' />
               </a>
+            </p>
+            <p className='is-size-7 has-text-centered'>
+              Built with <strong>♥︎</strong> in <strong>Dublin</strong>
             </p>
           </div>
         </div>
