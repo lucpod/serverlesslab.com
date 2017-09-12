@@ -35,8 +35,8 @@ const Instructors = () => (
             </div>
             <div className='columns is-centered'>
               { instructors.map((instructor, i) => (
-                <div className='column is-one-quarter'>
-                  <Instructor {...instructor} />
+                <div key={i} className='column is-half'>
+                  <Instructor {...instructor} direction={i % 2 === 0 ? 'left' : 'right'} />
                 </div>
               )) }
             </div>
