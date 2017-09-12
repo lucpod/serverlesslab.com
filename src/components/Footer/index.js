@@ -26,7 +26,8 @@ const Footer = () => (
               </a>
             </p>
             <p className='is-size-7 has-text-centered'>
-              Built with <strong>♥︎</strong> in <strong>Dublin</strong>
+              Built with <strong>♥︎</strong> in <strong>Dublin</strong><br />
+              by a <strong>Corkonian</strong> and a <strong>Sicilian</strong>
             </p>
           </div>
         </div>
