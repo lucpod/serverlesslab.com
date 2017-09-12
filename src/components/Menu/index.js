@@ -40,7 +40,6 @@ class Menu extends Component {
                 <a className='navbar-item' href='#why-serverless'>Why Serverless?</a>
                 <a className='navbar-item' href='#curricula'>Curricula</a>
                 <a className='navbar-item' href='#instructors'>Instructors</a>
-                <a className='navbar-item' href='#talk-with-us'>Talk with us</a>
                 <a className='navbar-item' href='#why-training'>ROI</a>
               </div>
             </div>
