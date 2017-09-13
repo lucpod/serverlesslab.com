@@ -14,7 +14,7 @@ const Hero = () =>
             </div>
             <div className='column is-three-quarters'>
               <div className='content'>
-                <h1 className='title'>Why is time to jump into serverless?</h1>
+                <h1 className='title'>Why is it time to adopt serverless?</h1>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ const Hero = () =>
             <div className='column is-three-quarters'>
               <div className='content'>
                 <p className='is-size-4'>
-              The serverless paradigm let developers shift their focus from the server level to the task level, allowing organisations to move faster and with greater focus on delivering value to their customers rather than being stuck with infrastructural concerns.
+                  Serverless lets developers shift their focus from the server level to the task level, allowing organisations to move faster and with greater focus on delivering value to their customers rather than being stuck with infrastructure concerns.
                 </p>
 
                 <p className='is-size-5'>
