@@ -36,24 +36,24 @@ const Hero = () =>
                 </p>
 
                 <p className='is-size-5'>
-              If you want to migrate an existing product (or parts of it) to serverless, you will then benefit of <strong>greater agility</strong> and <strong>ability to integrate with other platforms or release new features quickly</strong>, which will give you a <strong>sensible advantage over your competitors</strong>.
+              If you want to migrate an existing product (or parts of it) to serverless, you will then benefit of <strong>greater agility</strong> and <strong>ability to integrate with other platforms</strong> or <strong>release new features quickly</strong>, which will increase your <strong>competitive advantage</strong>.
                 </p>
 
                 <p className='is-size-5'>
-              But that’s not all, there are several other important advantages that come with serverless architectures:
+              But that’s not all, there are several other important advantages that come with serverless:
                 </p>
 
-                <ul className='is-size-5'>
+                <ul className='is-size-6'>
                   <li>
-                    <strong>Auto-scalability</strong>: serverless infrastructure is fully managed. Developers don’t need to implement code to scale and administrators don’t need to upgrade servers or add additional ones.
+                    <strong>Auto-scalability</strong>: serverless is fully managed. Developers don’t need to implement code to scale and administrators don’t need to worry about updates or provisioning.
                   </li>
 
                   <li>
-                    <strong>High availability & Geolocation</strong>: since the infrastructure is fully managed you don’t have to worry about maintaining uptime on an machinery level, since this is guaranteed by the provider. Plus distributing your app over different geographic locations for reduced latency is just  a click away.
+                    <strong>High availability & Geolocation</strong>: since the infrastructure is fully managed you don’t have to worry about uptime at machinery level, it is guaranteed by the provider. Plus distributing your app over different geographic locations for reduced latency is just  a click away.
                   </li>
 
                   <li>
-                    <strong>Efficiency & cost</strong>: Serverless has a ‘pay as you use’ model: you pay for the runtime of your function and the time spent executing your code, so you incur the cost of unutilized functions as seen in a cloud computing model where even ‘idle’ resources have to be paid for.
+                    <strong>Efficiency & cost</strong>: Serverless has a ‘pay per use’ model: you pay for memory allocation and the time spent executing your code, so you don't incur the cost of unutilized functions as seen in cloud computing models where even ‘idle’ resources have to be paid for.
                   </li>
                 </ul>
               </div>
