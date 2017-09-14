@@ -1,0 +1,60 @@
+version: 2
+
+jobs:
+  build:
+
+    branches:
+      ignore:
+        - gh-pages
+
+    docker:
+      - image: circleci/node:8.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: test
+          command: npm test
+
+      - run:
+          name: build
+          command: npm run build
+
+      - deploy:
+          name: deployment on GitHub pages
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              GITURL=`git config remote.origin.url`
+              cp -rf .circleci build
+              cd build
+              rm -rf .git/
+              git config --global user.email "$GH_EMAIL"
+              git config --global user.name "$GH_NAME"
+              git init
+              git remote add origin $GITURL
+              echo "$DOMAIN" > CNAME
+              git add .
+              git commit -am "Automated Rebuild"
+              git push origin master:gh-pages --force
+              curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache" \
+                 -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+                 -H "X-Auth-Key: $CLOUDFLARE_AUTH_KEY" \
+                 -H "Content-Type: application/json" \
+                 --data "{\"files\":[\"https://${DOMAIN}/index.html\"]}"
+              npm run release:tag
+            fi
