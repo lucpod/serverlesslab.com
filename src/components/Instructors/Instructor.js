@@ -19,7 +19,7 @@ const InstructorMedia = ({picture, name, index, direction}) => {
 }
 
 const Instructor = ({name, picture, description, links, direction}) => (
-  <div className='box'>
+  <div className='box' data-aos-delay='200' data-aos={`fade-${direction === 'left' ? 'right' : 'left'}`}>
     <div className='media'>
       {direction === 'left' && <InstructorMedia name={name} picture={picture} direction={direction} />}
       <div className='media-content'>

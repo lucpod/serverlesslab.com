@@ -14,9 +14,9 @@ class Curricula extends Component {
       <section id='curricula' className='section curricula'>
         <div className='container'>
           <div className='content'>
-            <h1 className='title'>Curricula</h1>
+            <h1 data-aos='fade-up' className='title'>Curricula</h1>
           </div>
-          <div className='columns'>
+          <div className='columns' data-aos='fade-right' data-aos-delay='100'>
             <div className='column is-three-quarters'>
               <div className='content'>
                 <p className='is-size-4'>
@@ -32,7 +32,7 @@ class Curricula extends Component {
               />
             </div>
             <div className='column is-hidden-mobile'>
-              <p className='has-text-centered'>
+              <p className='has-text-centered' data-aos='fade-up'>
                 <img className='section-icon' src={flaskIcon} />
               </p>
             </div>

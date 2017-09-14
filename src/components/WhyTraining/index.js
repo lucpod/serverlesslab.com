@@ -39,11 +39,11 @@ class WhyTraining extends Component {
       <section id='why-training' className='section why-training'>
         <div className='container'>
           <div className='content'>
-            <h1 className='title'>Why choose in-house training</h1>
+            <h1 data-aos='fade-up' className='title'>Why choose in-house training</h1>
           </div>
 
           <div className='columns'>
-            <div className='column is-three-quarters'>
+            <div className='column is-three-quarters' data-aos='fade-right' data-aos-delay='100'>
               <div className='content'>
                 <h2 className='is-size-2'>
               Invest in training and save valuable hours of work
@@ -102,7 +102,7 @@ class WhyTraining extends Component {
               </div>
             </div>
             <div className='column is-hidden-mobile'>
-              <p className='has-text-centered'>
+              <p className='has-text-centered' data-aos='fade-up'>
                 <img className='section-icon' src={flagIcon} />
               </p>
             </div>

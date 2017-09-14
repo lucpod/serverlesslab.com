@@ -14,18 +14,18 @@ const Hero = () =>
             </div>
             <div className='column is-three-quarters'>
               <div className='content'>
-                <h1 className='title'>Why is it time to adopt serverless?</h1>
+                <h1 data-aos='fade-up' className='title'>Why is it time to adopt serverless?</h1>
               </div>
             </div>
           </div>
 
           <div className='columns'>
             <div className='column is-hidden-mobile'>
-              <p className='has-text-centered'>
+              <p className='has-text-centered' data-aos='fade-up'>
                 <img className='section-icon' src={galaxyIcon} />
               </p>
             </div>
-            <div className='column is-three-quarters'>
+            <div className='column is-three-quarters' data-aos='fade-left' data-aos-delay='100'>
               <div className='content'>
                 <p className='is-size-4'>
                   Serverless lets developers shift their focus from the server level to the task level, allowing organisations to move faster and with greater focus on delivering value to their customers rather than being stuck with infrastructure concerns.

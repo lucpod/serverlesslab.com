@@ -11,6 +11,7 @@ import Instructors from './Instructors'
 import WhyTraining from './WhyTraining'
 import Footer from './Footer'
 import drift from './utils/drift'
+import AOS from 'aos'
 
 const Content = () => (
   <div>
@@ -51,6 +52,8 @@ if (window && document) {
     if (window.location.href.indexOf('localhost') === -1) {
       drift()
     }
+
+    AOS && AOS.init({duration: 600})
   }
 }
 
