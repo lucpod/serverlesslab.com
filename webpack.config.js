@@ -4,6 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const buildPath = resolve(join(__dirname, 'build'))
 
@@ -62,6 +63,9 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(buildPath),
+    new CopyWebpackPlugin([
+      { from: 'src/static', to: buildPath }
+    ]),
     new StaticSiteGeneratorPlugin({
       entry: 'main',
       locals: {},

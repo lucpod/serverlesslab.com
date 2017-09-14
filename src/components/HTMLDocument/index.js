@@ -11,6 +11,11 @@ class HTMLDocument extends Component {
     return this.props.children ? this.props.children : null
   }
 
+  renderLinks () {
+    const { links } = this.props
+    return links.map((data, index) => (<link key={index} {...data} />))
+  }
+
   renderFavicon () {
     const { favicon } = this.props
     if (!favicon) return null
@@ -74,6 +79,7 @@ class HTMLDocument extends Component {
       <html {...this.props.htmlAttributes}>
         <head>
           <title>{this.props.title}</title>
+          {this.renderLinks()}
           {this.renderMetatags()}
           {this.renderFavicon()}
           {this.renderStylesheets()}

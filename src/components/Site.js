@@ -32,7 +32,15 @@ const Site = ({assets}) => (
     metatags={[
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Serverless workshops from serverless and AWS experts' }
+      { name: 'description', content: 'Serverless workshops from serverless and AWS experts' },
+      { name: 'theme-color', content: '#ffffff' }
+    ]}
+    links={[
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'mask-icon', color: '#00386d', href: '/safari-pinned-tab.svg' }
     ]}
     stylesheets={[ `style-${version}.css` ]}
     scripts={[ `${assets.main}` ]}
