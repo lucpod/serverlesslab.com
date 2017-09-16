@@ -3,12 +3,7 @@ import { h, render } from 'preact'
 import HTMLDocument from './HTMLDocument'
 import '../style.sass'
 import Menu from './Menu'
-import Hero from './Hero'
-import ValueProposition from './ValueProposition'
-import WhyServerless from './WhyServerless'
-import Curricula from './Curricula'
-import Instructors from './Instructors'
-import WhyTraining from './WhyTraining'
+import Hero404 from './Hero/Hero404'
 import Footer from './Footer'
 import drift from './utils/drift'
 import AOS from 'aos'
@@ -16,12 +11,7 @@ import AOS from 'aos'
 const Content = () => (
   <div>
     <Menu />
-    <Hero />
-    <ValueProposition />
-    <WhyServerless />
-    <Curricula />
-    <Instructors />
-    <WhyTraining />
+    <Hero404 />
     <Footer />
   </div>
 )
@@ -43,7 +33,7 @@ const Site = ({assets}) => (
       { rel: 'mask-icon', color: '#00386d', href: '/safari-pinned-tab.svg' }
     ]}
     stylesheets={[ `style-${version}.css` ]}
-    scripts={[ `${assets.site}` ]}
+    scripts={[ `${assets.page404}` ]}
   >
     <div id='main'>
       <Content />

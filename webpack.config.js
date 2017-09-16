@@ -10,10 +10,14 @@ const buildPath = resolve(join(__dirname, 'build'))
 
 module.exports = {
 
-  entry: './src/build.js',
+  entry: {
+    build: './src/build.js',
+    site: './src/components/Site.js',
+    page404: './src/components/Page404.js'
+  },
 
   output: {
-    filename: `build-${version}.js`,
+    filename: `[name]-${version}.js`,
     path: buildPath,
     libraryTarget: 'umd'
   },
@@ -67,7 +71,7 @@ module.exports = {
       { from: 'src/static', to: buildPath }
     ]),
     new StaticSiteGeneratorPlugin({
-      entry: 'main',
+      entry: 'build',
       locals: {},
       globals: {
         window: {},

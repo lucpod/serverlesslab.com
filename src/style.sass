@@ -117,6 +117,9 @@ img.section-icon
   height: 100%
   -webkit-font-smoothing: antialiased
 
+#hero.notfound::before
+  background-image: linear-gradient(to bottom right, rgba(250, 250, 250, .7) 35%, #2175bc 95%)
+
 #hero
   background-size: cover
   position: relative
@@ -134,5 +137,7 @@ img.section-icon
 
   .main-text
     color: #fff
+    &.notfound
+      color: #000
 
 @import "../node_modules/aos/dist/aos.css"
