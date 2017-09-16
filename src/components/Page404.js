@@ -10,7 +10,7 @@ import AOS from 'aos'
 
 const Content = () => (
   <div>
-    <Menu />
+    <Menu base='/' />
     <Hero404 />
     <Footer />
   </div>

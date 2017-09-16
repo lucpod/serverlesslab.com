@@ -14,7 +14,7 @@ class Menu extends Component {
     this.setState({burgerActive: !this.state.burgerActive})
   }
 
-  render () {
+  render ({ base = '' }) {
     return (
       <div id='menu' className='mainnav'>
         <div className='container'>
@@ -36,11 +36,11 @@ class Menu extends Component {
 
             <div id='navMenu-main' className={`navbar-menu ${this.state.burgerActive ? 'is-active' : ''}`}>
               <div className='navbar-start'>
-                <a className='navbar-item' href='#value-proposition'>Our offer</a>
-                <a className='navbar-item' href='#why-serverless'>Why Serverless?</a>
-                <a className='navbar-item' href='#curricula'>Curricula</a>
-                <a className='navbar-item' href='#instructors'>Instructors</a>
-                <a className='navbar-item' href='#why-training'>ROI</a>
+                <a className='navbar-item' href={`${base}#value-proposition`}>Our offer</a>
+                <a className='navbar-item' href={`${base}#why-serverless`}>Why Serverless?</a>
+                <a className='navbar-item' href={`${base}#curricula`}>Curricula</a>
+                <a className='navbar-item' href={`${base}#instructors`}>Instructors</a>
+                <a className='navbar-item' href={`${base}#why-training`}>ROI</a>
               </div>
             </div>
           </nav>
