@@ -1,6 +1,7 @@
 {
   "name": "serverlesslab.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "versionDate": "2017-09-16",
   "description": "Source code for serverlesslab.com website",
   "private": true,
   "scripts": {
@@ -8,7 +9,8 @@
     "build": "webpack -p",
     "test:lint": "node_modules/.bin/eslint src/ webpack.config.js",
     "test": "npm run test:lint",
-    "release:tag": "git tag $npm_package_version && git push --tags"
+    "release:tag": "git tag $npm_package_version && git push --tags",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
+    "gh-pages": "^1.0.0",
     "json-loader": "^0.5.7",
     "node-sass": "^4.5.3",
     "preact": "^8.2.5",

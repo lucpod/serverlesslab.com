@@ -39,18 +39,10 @@ jobs:
           name: deployment on GitHub pages
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              GITURL=`git config remote.origin.url`
-              cp -rf .circleci build
-              cd build
-              rm -rf .git/
+              echo "$DOMAIN" > CNAME
               git config --global user.email "$GH_EMAIL"
               git config --global user.name "$GH_NAME"
-              git init
-              git remote add origin $GITURL
-              echo "$DOMAIN" > CNAME
-              git add .
-              git commit -am "Automated Rebuild"
-              git push origin master:gh-pages --force
+              NODE_DEBUG=gh-pages npm run deploy
               curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache" \
                  -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
                  -H "X-Auth-Key: $CLOUDFLARE_AUTH_KEY" \
