@@ -1,4 +1,5 @@
 import { h } from 'preact'
+import VersionBadge from './VersionBadge'
 import logo from '../images/logo-color.svg'
 
 const Footer = () => (
@@ -29,6 +30,7 @@ const Footer = () => (
               Built with <strong>♥︎</strong> in <strong>Dublin</strong><br />
               by a <strong>Corkonian</strong> and a <strong>Sicilian</strong>
             </p>
+            <p className='has-text-centered'><VersionBadge /></p>
           </div>
         </div>
       </div>
