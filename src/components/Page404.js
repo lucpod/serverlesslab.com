@@ -50,7 +50,9 @@ if (window && document) {
 
     if (window.location.href.indexOf('localhost') === -1) {
       drift() // init drift
-      ga() // init google analytics
+      const g = ga() // init google analytics
+      g('create', 'UA-106612990-1', 'auto')
+      g('send', 'pageview')
     }
 
     AOS && AOS.init({duration: 600})
