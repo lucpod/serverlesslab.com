@@ -5,6 +5,7 @@ import '../style.sass'
 import Menu from './Menu'
 import Hero404 from './Hero/Hero404'
 import Footer from './Footer'
+import ga from './utils/ga'
 import drift from './utils/drift'
 import AOS from 'aos'
 
@@ -48,7 +49,8 @@ if (window && document) {
     render(<Content isClient />, root, root.firstChild)
 
     if (window.location.href.indexOf('localhost') === -1) {
-      drift()
+      drift() // init drift
+      ga() // init google analytics
     }
 
     AOS && AOS.init({duration: 600})

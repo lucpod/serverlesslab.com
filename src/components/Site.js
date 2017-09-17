@@ -11,6 +11,7 @@ import Instructors from './Instructors'
 import WhyTraining from './WhyTraining'
 import Footer from './Footer'
 import drift from './utils/drift'
+import ga from './utils/ga'
 import AOS from 'aos'
 
 const Content = () => (
@@ -58,7 +59,8 @@ if (window && document) {
     render(<Content isClient />, root, root.firstChild)
 
     if (window.location.href.indexOf('localhost') === -1) {
-      drift()
+      drift() // init drift
+      ga() // init google analytics
     }
 
     AOS && AOS.init({duration: 600})
