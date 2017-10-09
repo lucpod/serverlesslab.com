@@ -35,8 +35,19 @@ const Site = ({assets}) => (
     metatags={[
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Serverless workshops from serverless and AWS experts' },
-      { name: 'theme-color', content: '#ffffff' }
+      { name: 'description', content: 'Effective Serverless, AWS Lambda and Node.js training' },
+      { name: 'theme-color', content: '#ffffff' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Serverless Lab' },
+      { property: 'og:description', content: 'Effective Serverless, AWS Lambda and Node.js training' },
+      { property: 'og:url', content: 'https://serverlesslab.com' },
+      { property: 'og:image', content: 'https://serverlesslab.com/fb-share.jpg' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@loige' },
+      { name: 'twitter:creator', content: '@Podgeypoos79' },
+      { name: 'twitter:title', content: 'Serverless Lab' },
+      { name: 'twitter:description', content: 'Effective Serverless, AWS Lambda and Node.js training' },
+      { name: 'twitter:image', content: 'https://serverlesslab.com/tw-share.jpg' }
     ]}
     links={[
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
