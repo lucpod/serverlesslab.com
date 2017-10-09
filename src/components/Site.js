@@ -42,6 +42,7 @@ const Site = ({assets}) => (
       { property: 'og:description', content: 'Effective Serverless, AWS Lambda and Node.js training' },
       { property: 'og:url', content: 'https://serverlesslab.com' },
       { property: 'og:image', content: 'https://serverlesslab.com/fb-share.jpg' },
+      { property: 'fb:app_id', content: '1738463943124904' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@loige' },
       { name: 'twitter:creator', content: '@Podgeypoos79' },
