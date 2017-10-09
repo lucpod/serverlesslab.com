@@ -1,7 +1,7 @@
 {
   "name": "serverlesslab.com",
-  "version": "1.0.13",
-  "versionDate": "2017-09-17",
+  "version": "1.0.14",
+  "versionDate": "2017-10-09",
   "description": "Source code for serverlesslab.com website",
   "private": true,
   "scripts": {

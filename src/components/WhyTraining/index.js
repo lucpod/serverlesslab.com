@@ -1,5 +1,5 @@
 import { h, Component } from 'preact'
-import TalkWithUsButton from '../utils/TalkWithUsButton'
+import TalkToUsButton from '../utils/TalkToUsButton'
 import flagIcon from '../icons/flagstarplanet.svg'
 
 class WhyTraining extends Component {
@@ -97,7 +97,7 @@ class WhyTraining extends Component {
                   </div>
                 </div>
                 <p>
-                  <TalkWithUsButton />
+                  <TalkToUsButton />
                 </p>
               </div>
             </div>

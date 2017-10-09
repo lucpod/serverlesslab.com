@@ -1,6 +1,6 @@
 import { h } from 'preact'
 import planetaryIcon from '../icons/planetarysystem.svg'
-import TalkWithUsButton from '../utils/TalkWithUsButton'
+import TalkToUsButton from '../utils/TalkToUsButton'
 
 const ValueProposition = () =>
   (<div>
@@ -20,7 +20,7 @@ const ValueProposition = () =>
               Our curriculum includes learning <strong>Lambda Functions</strong>, <strong>API gateway</strong>, <strong>Dynamo DB</strong>, <strong>S3</strong>, <strong>RDS</strong>, <strong>Cloudwatch</strong> and covers from basic to advanced topics like <strong>networking</strong>, <strong>performance</strong>, <strong>security</strong>, <strong>troubleshooting</strong> and <strong>continuous delivery</strong>.
               </p>
               <p>
-                <TalkWithUsButton />
+                <TalkToUsButton />
               </p>
             </div>
           </div>

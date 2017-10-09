@@ -9,6 +9,7 @@ import WhyServerless from './WhyServerless'
 import Curricula from './Curricula'
 import Instructors from './Instructors'
 import WhyTraining from './WhyTraining'
+import Closing from './Closing'
 import Footer from './Footer'
 import drift from './utils/drift'
 import ga from './utils/ga'
@@ -23,6 +24,7 @@ const Content = () => (
     <Curricula />
     <Instructors />
     <WhyTraining />
+    <Closing />
     <Footer />
   </div>
 )

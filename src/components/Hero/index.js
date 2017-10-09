@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import Separator from '../Separator'
-import bg from './images/bg.jpg'
-import logo from './images/logo.svg'
+import bg from '../images/bg.jpg'
+import logo from '../images/logo.svg'
 
 const Hero = () =>
   (
